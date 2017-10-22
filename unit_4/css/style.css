@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+body{
+	color: black;
+	padding-top: 50px;
+}
+.white-box{
+	color: black;
+	background-color: grey ;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 2em;
+	font-family: Open Sans, helvetica bold, sans-serif;
+}
+p{
+	font-family: Roboto, garamond, serif;
+}
+.find-out-more{
+	font-family: Open Sans, helvetic bold, sans-serif;
+	font-weight: 1.5em;
+}
