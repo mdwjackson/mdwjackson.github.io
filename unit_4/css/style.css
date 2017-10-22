@@ -1,21 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 body{
-	color: black;
-	padding-top: 50px;
-}
-.white-box{
-	color: black;
-	background-color: grey ;
-	text-transform: uppercase;
+	color: #333;
+	margin: 2em;
 }
 h1 {
 	font-size: 2em;
 	font-family: Open Sans, helvetica bold, sans-serif;
 }
+h2 {
+	font-size: 1.5em;
+	font-family: Open Sans, helvetica bold, sans-serif;
+}
+h3 {
+	font-size: 1.25em;
+	font-family: Open Sans, helvetica bold, sans-serif;
+}
 p{
 	font-family: Roboto, garamond, serif;
 }
-.find-out-more{
-	font-family: Open Sans, helvetic bold, sans-serif;
-	font-weight: 1.5em;
+header {
+	text-transform: uppercase;
+}
+a:hover {
+	background-color: yellow;
+}
+button {
+    background-color: gray;
+    border: black;
+    border-style: solid;
+    color: #333;
+    padding: 0.25em 0.25em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+   	font-family: Open Sans, helvetic bold, sans-serif;
+}
+.ads-logo{
+	width: 10%;
+	height: auto;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.banner {
+	max-height: 350px;
+	overflow: hidden;
 }
