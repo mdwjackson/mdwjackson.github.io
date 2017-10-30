@@ -31,18 +31,6 @@ header {
 a:hover {
 	background-color: yellow;
 }
-button {
-    background-color: gray;
-    border: black;
-    border-style: solid;
-    color: #333;
-    padding: 0.25em 0.25em;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1em;
-    display: inline-block;
-   	font-family: Open Sans, helvetic bold, sans-serif;
-}
 .ads-logo{
 	width: 10%;
 	height: auto;
