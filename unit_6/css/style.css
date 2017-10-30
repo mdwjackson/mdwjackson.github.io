@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+body{
+	color: #333;
+	margin: 2em;
+}
+
+nav {
+	text-align: right;
+}
+
+nav a {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+h1 h2 h3 {
+	font-family: Open Sans, helvetica bold, sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+p{
+	font-family: Roboto, garamond, serif;
+	width: 30em;
+}
+
+header {
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+a:hover {
+	background-color: yellow;
+}
+
+.ads-logo{
+	width: 10%;
+	height: auto;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+.banner {
+	background-image: URL("../images/working-guy.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	height: 70vh;
+	padding: 2em;
+	font-size: 2.5em;
+}
+
+#subject {
+	width: 20em;
+	height: 10em;
+}
+
+/*style="height:10em" style="width: auto;"*/
+
+aside {
+	padding: 20px;
+}
+
+article {
+	padding: 20px;
+	width: 75%;
+}
+
+footer {
+	border: 1px black solid;
+	padding: 20px;
+}
+
+section{
+	border: 1px black solid;
+	padding: 20px;
+}
+
+aside {
+	width: 15em
+}
