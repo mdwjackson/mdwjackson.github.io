@@ -1,52 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
 body{
-	color: #333;
+	color: #141823;
 	margin: 2em;
-}
-
-nav {
-	text-align: right;
-}
-
-nav a {
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-h1 h2 h3 {
-	font-family: Open Sans, helvetica bold, sans-serif;
-}
-
-h1 {
-	font-size: 2em;
-
-}
-
-h2 {
-	font-size: 1.5em;
-}
-
-h3 {
-	font-size: 1.25em;
-}
-
-p{
-	font-family: Roboto, garamond, serif;
-	width: 30em;
 }
 
 header {
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 5em;
+	background-color: white;
+	width: auto;
+}
+
+nav {
+	float: right;
+	display: block;
+	padding: 1em;
+}
+
+nav a {
+	margin-right: 1em;
+	margin-left: 1em;
 }
 
 a:hover {
-	background-color: yellow;
+	background-color: rgb(255, 255, 200);
 }
 
-.ads-logo{
-	width: 10%;
-	height: auto;
+.contact-link:hover {
+	background-color: rgba(10,10,255,0.2);
+}
+
+h1 h2 h3 {font-family: Open Sans, helvetica bold, sans-serif;}
+h1 {font-size: 2em;}
+h2 {
+	font-size: 1.5em;
+	padding: 0.5em;
+}
+h3 {font-size: 1.25em;}
+p {
+	font-family: Roboto, garamond, serif;
+	padding: 0.2em;
 }
 
 img{
@@ -54,42 +48,99 @@ img{
 	height: auto;
 }
 
+article {
+	padding: 20px;
+	width: 640px;
+	float: left;
+}
+
+section {
+	padding: 20px;
+	margin: 10px;
+	border:  1px black solid;
+}
+
+aside {
+	padding: 2em;
+	width: 320px;
+	display: inline-block;
+}
+
+footer {
+	clear: both;
+	border: 1px black solid;
+	padding: 20px;
+	display: block;
+	position: bottom;
+	float: left;
+	background-color: rgba(10,10,255,0.05);
+}
+
+.clearfix:after {
+	visibility: hidden;
+	font-size: 0;
+	display: block;
+	content: " ";
+	height: 0;
+}
+
+#tag-line {
+	padding: 1.5em 0;
+}
+
 .banner {
 	background-image: URL("../images/working-guy.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	color: white;
-	height: 70vh;
+	height: 90vh;
 	padding: 2em;
-	font-size: 2.5em;
 }
 
 #subject {
-	width: 20em;
 	height: 10em;
 }
 
-/*style="height:10em" style="width: auto;"*/
-
-aside {
-	padding: 20px;
+.ads-logo{
+	width: 10%;
+	height: auto;
 }
 
-article {
-	padding: 20px;
-	width: 75%;
+.contact {
+	width: 25%;
 }
 
-footer {
-	border: 1px black solid;
-	padding: 20px;
+.all-services {
+	width:auto;
 }
 
-section{
-	border: 1px black solid;
-	padding: 20px;
+input {
+	width: 100%
+	display: block;
+	background-color: rgba(10,10,255,0.2);
 }
 
-aside {
-	width: 15em
+textarea {
+	width: 100%
+	display: block;
+	background-color: rgba(10,10,255,0.2);
+}
+
+input[type=submit] {
+	padding: 0.5em;
+	background-color: rgba(10,10,255,0.75);
+	color: #FFF
+}
+
+#column-1 {
+	float: left;
+padding-right: 2em;
+}
+
+#column-2 {
+
+}
+
+#column-3 {
+	float: right;
+padding-left: 2em;
 }
