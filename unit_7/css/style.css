@@ -5,6 +5,7 @@
 body{
 	color: #141823;
 	margin: 0em;
+	background-color: rgba(255,211,10,.10)
 }
 
 header {
@@ -37,17 +38,11 @@ a:hover {
 	background-color: rgb(255, 255, 200);
 }
 
-.contact-link:hover {
-	background-color: rgba(10,10,255,0.2);
-}
-
 h1, h2, h3 {font-family: Open Sans, helvetica bold, sans-serif;}
 h1 {font-size: 1.5em;}
 h2 {font-size: 1.25em; padding:0.5em 0;}
 h3 {font-size: 1.15em;}
-p {
-	font-family: Roboto, garamond, serif;
-}
+p {font-family: Roboto, garamond, serif;}
 
 img{
 	width: 100%;
@@ -58,8 +53,8 @@ img{
 main {
 	padding: 1.5em;
 	width: 80%;
-	border: 1px red solid;
 	margin: auto;
+	background-color: white;
 }
 
 ul {
@@ -70,18 +65,18 @@ ul {
 }
 
 section {
-	padding: 0 1em;
-	border:  1px black solid;
+	padding: 1em;
 	width: 50%;
 	float: left;
+	border: 1px black solid;
 }
 
 aside {
 	padding: 0 4em 1em 4em;
 	width: 80%;
 	display: block;
-	border: 1px black solid;
 	margin: auto;
+	background-color: white;
 }
 
 form > * {
@@ -124,7 +119,7 @@ footer {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 90vh;
-	margin: 0;
+	margin: 3em 0 0 0;
 }
 
 #subject {
@@ -132,16 +127,13 @@ footer {
 }
 
 .ads-logo{
+	margin: 1em 0 1em 0;
 	width: auto;
 	height: auto;
 }
 
 .contact {
 	width: 25%;
-}
-
-.all-services {
-	width:auto;
 }
 
 input {
@@ -161,14 +153,13 @@ input[type=submit] {
 	width: 100%;	
 }
 
+.contact-link:hover {
+	background-color: rgba(10,10,255,0.2);
+}
 
 #column-1 {
 	float: left;
 	padding-right: 2em;
-}
-
-#column-2 {
-
 }
 
 #column-3 {
