@@ -32,7 +32,7 @@ nav a {
 	margin: .025em 1em 0.25em 1em;
 }
 
-a:link {
+nav a:link {
 border-top: 1px solid #000000;
 border-bottom: 1px solid #000000;
 }
@@ -57,7 +57,7 @@ h1, h2, h3 {font-family: Open Sans, helvetica bold, sans-serif;}
 h1 {font-size: 1.5em;}
 h2 {font-size: 1.25em; padding:0.5em 0;}
 h3 {font-size: 1.15em;}
-p {font-family: Roboto, garamond, serif; max-width: 35em;}
+p {font-family: Roboto, garamond, serif; max-width: 35em; padding: 0.25em 0;}
 
 img{
 	width: 100%;
@@ -97,6 +97,8 @@ aside {
 
 form > * {
 	display: block;
+	border: none;
+	margin: 0.5em 0;
 }
 
 footer {
@@ -106,8 +108,8 @@ footer {
 	display: block;
 	position: bottom;
 	bottom: 0;
-	/*float: left;*/
 	background-color: rgba(10,10,255,0.05);
+	width: 100%;
 }
 
 .clearfix:after {
@@ -162,6 +164,7 @@ footer {
 
 input {
 	font-size: 1.1em;
+	padding: 0.5em;
 }
 
 input, textarea {
@@ -186,7 +189,144 @@ input[type=submit] {
 	padding-right: 2em;
 }
 
+#column-2 {
+	display: block;
+	content: " ";
+	width: 100%;
+	clear: both;
+}
+
 #column-3 {
 	float: right;
 	padding-left: 2em;
+}
+
+@media only screen and (min-width: 1118px) and (max-width: 1230px) {
+	.all-services {
+		background-color: grey;
+	}
+	section section{
+		padding: 1em;
+		width: 50%;
+		float: left;
+		border: 1px black solid;
+		min-height: 16em;
+	}
+}
+
+@media only screen and (min-width: 952px) and (max-width: 1055px) {
+	.all-services {
+		background-color: blue;
+	}
+	section section{
+		padding: 1em;
+		width: 50%;
+		float: left;
+		border: 1px black solid;
+		min-height: 17em;
+	}
+
+	.contact {
+		width: 35%;
+	}
+}
+
+@media only screen and (min-width: 780px) and (max-width: 951px) {
+	.all-services {
+		background-color: red;
+	}
+	section section{
+		padding: 1em;
+		width: 50%;
+		float: left;
+		border: 1px black solid;
+		min-height: 18.5em;
+	}
+	nav a {
+		margin: 0 0.1em;
+		font: 0.8em;
+	}
+	.contact {
+		width: 35%;
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 779px) {
+	.all-services {
+		background-color: brown;
+	}
+	section section{
+		padding: 0.2em;
+		width: 100%;
+		float: none;
+		border: 1px black solid;
+		min-height: 05em;
+	}
+	nav a {
+		margin: 0 0.1em;
+		font: 0.8em;
+	}
+	.contact {
+		width: 60%;
+	}
+	main {
+		padding: .5em;
+		width: 85%;
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 460px) and (max-width: 500px) {
+	.all-services {
+		background-color: blue;
+	}
+	section section{
+		padding: 0.2em;
+		width: 100%;
+		float: none;
+		border: 1px black solid;
+		min-height: 05em;
+	}
+	nav a {
+		font: 0.6em;
+	}
+	.contact {
+		width: 80%;
+	}
+	main {
+		padding: .5em;
+		width: 90%;
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 459px) {
+	.all-services {
+		background-color: blue;
+	}
+	section section{
+		padding: 0.2em;
+		width: 100%;
+		float: none;
+		border: 1px black solid;
+		min-height: 05em;
+	}
+
+	nav a {
+		font: 0.6em;
+	}
+	.contact {
+		width: 100%;
+	}
+	footer p{
+		font-size: 0.6em;
+	}
+	.hide-s {
+		display: none;
+	}
+	main {
+		padding: .5em;
+		width: 95%;
+		margin: auto;
+	}
 }
