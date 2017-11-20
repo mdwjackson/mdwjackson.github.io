@@ -5,6 +5,8 @@
 body{
 	color: #141823;
 	margin: 0em;
+	font-size: 16px;
+	line-height: 1.25;
 }
 
 header {
@@ -212,6 +214,9 @@ input[type=submit] {
 		border: 1px black solid;
 		min-height: 16em;
 	}
+	main {
+		font-size: 16px;
+	}
 }
 
 @media only screen and (min-width: 952px) and (max-width: 1055px) {
@@ -228,6 +233,10 @@ input[type=submit] {
 
 	.contact {
 		width: 35%;
+	}
+	main {
+		font-size: 14px;
+		width: 80%;
 	}
 }
 
@@ -248,6 +257,10 @@ input[type=submit] {
 	}
 	.contact {
 		width: 35%;
+	}
+	main {
+		font-size: 12px;
+		width: 80%;
 	}
 }
 
@@ -273,6 +286,7 @@ input[type=submit] {
 		padding: .5em;
 		width: 85%;
 		margin: auto;
+		font-size: 12px;
 	}
 }
 
@@ -297,10 +311,11 @@ input[type=submit] {
 		padding: .5em;
 		width: 90%;
 		margin: auto;
+		font-size: 12px;
 	}
 }
 
-@media only screen and (min-width: 300px) and (max-width: 459px) {
+@media only screen and (min-width: 200px) and (max-width: 459px) {
 	.all-services {
 		background-color: blue;
 	}
@@ -311,7 +326,6 @@ input[type=submit] {
 		border: 1px black solid;
 		min-height: 05em;
 	}
-
 	nav a {
 		font: 0.6em;
 	}
@@ -328,5 +342,6 @@ input[type=submit] {
 		padding: .5em;
 		width: 95%;
 		margin: auto;
+		font-size: 12px;
 	}
 }
