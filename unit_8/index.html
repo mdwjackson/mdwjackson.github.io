@@ -5,6 +5,27 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
 	<meta name="viewport" content="width=device-width, initialscale=1">
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+<script>function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </head>
 <body>
 	
@@ -14,6 +35,8 @@
 		<p>Digital Marketing Done Right!</p>
 	</div>
 		<nav class="clearfix">
+			<button onclick="myFunction()" class="dropbtn">Menu</button>
+			<div id="myDropdown" class="dropdown-content">
 			<a href="index.html#about">About Me</a>
 			<a href="index.html#digiservices">Services</a>
 			<a href="index.html#outsource">Agency Outsourcing</a>
@@ -21,7 +44,7 @@
 		</nav>
 	</header>
 	<div class="banner clearfix">
-	<p>Treating Small Businesses the same as Fortune 500's.</p>
+	<h1>Treating Small Businesses the same as Fortune 500's.</h1>
 	</div>
 
 <!-- Resize images and get proper images from istock etc. -->
@@ -82,11 +105,11 @@
 			<h2>Contact Matt</h2>
 			<form action="#" class="contact">
 				<label for="name">Your Name</label>
-				<input type="text" id="name" name="name" label="Your Name...">
+				<input type="text" id="name" name="name" placeholder="Your Name...">
 				<label for="email">Your Email</label>
 				<input type="text" id="email" placeholder="Your Email...">
 				<label for="subject">How can I help?</label>
-				<textarea id="subject" name="subject" label="What can I help you with?"></textarea>
+				<textarea id="subject" name="subject" placeholder="What can I help you with?"></textarea>
 				<input type="submit" name="submit" value="Submit To Your Pro" >
 			</form>
 		</aside>

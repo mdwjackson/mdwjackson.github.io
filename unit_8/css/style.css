@@ -30,14 +30,18 @@ nav {
 	padding: 0 0.5em;
 }
 
+
+
+
 nav a {
 	margin: .025em 1em 0.25em 1em;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	text-decoration: none;
+	padding: 0.25em 0;
+	font-size: 1.7em;
 }
 
-nav a:link {
-border-top: 1px solid #000000;
-border-bottom: 1px solid #000000;
-}
 
 a:visited {
 border-top: 1px solid #000000;
@@ -53,6 +57,8 @@ background-color: rgba(10,10,255,0.2);
 border-top: 1px solid #000000;
 border-bottom: 1px solid #000000;
 }
+
+a {color: darkblue;}
 
 
 h1, h2, h3 {font-family: Open Sans, helvetica bold, sans-serif;}
@@ -88,7 +94,7 @@ section section{
 	width: 50%;
 	float: left;
 	border: 1px black solid;
-	min-height: 15em;
+	min-height: 17em;
 }
 
 aside {
@@ -125,6 +131,7 @@ footer {
 	clear: both;
 }
 
+button {display:none;}
 
 .list1 {
 	float: left;
@@ -138,12 +145,12 @@ footer {
 	background-image: URL("../images/working-guy.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 90vh;
+	height: 85vh;
 	margin: 3em 0 0 0;
 	padding: 2em 2em;
 }
 
-.banner p {
+.banner h1 {
 	text-align: left;
 	color: white;
 	font-size: 2em;
@@ -166,15 +173,12 @@ footer {
 	width: 25%;
 }
 
-input {
-	font-size: 1.1em;
-	padding: 0.5em;
-}
-
 input, textarea {
 	width: 100%;
 	display: block;
 	background-color: rgba(10,10,255,0.2);
+	font-size: 1.1em;
+	padding: 0.5em;
 }
 
 input[type=submit] {
@@ -206,52 +210,8 @@ input[type=submit] {
 	padding-left: 2em;
 }
 
-@media only screen and (min-width: 1118px) and (max-width: 1230px) {
-	.all-services {
-		background-color: grey;
-	}
+@media only screen and (max-width: 951px) {
 	section section{
-		padding: 1em;
-		width: 50%;
-		float: left;
-		border: 1px black solid;
-		min-height: 16em;
-	}
-	main {
-		font-size: 16px;
-	}
-}
-
-@media only screen and (min-width: 952px) and (max-width: 1055px) {
-	.all-services {
-		background-color: blue;
-	}
-	section section{
-		padding: 1em;
-		width: 50%;
-		float: left;
-		border: 1px black solid;
-		min-height: 17em;
-	}
-
-	.contact {
-		width: 35%;
-	}
-	main {
-		font-size: 14px;
-		width: 80%;
-	}
-}
-
-@media only screen and (min-width: 780px) and (max-width: 951px) {
-	.all-services {
-		background-color: red;
-	}
-	section section{
-		padding: 1em;
-		width: 50%;
-		float: left;
-		border: 1px black solid;
 		min-height: 18.5em;
 	}
 	nav a {
@@ -259,28 +219,19 @@ input[type=submit] {
 		font: 0.8em;
 	}
 	.contact {
-		width: 35%;
+		width: 40%;
 	}
 	main {
-		font-size: 12px;
 		width: 80%;
 	}
 }
 
-@media only screen and (min-width: 500px) and (max-width: 779px) {
-	.all-services {
-		background-color: brown;
-	}
+@media only screen and (max-width: 779px) {
 	section section{
-		padding: 0.2em;
+		padding: 0.1em;
 		width: 100%;
 		float: none;
-		border: 1px black solid;
-		min-height: 05em;
-	}
-	nav a {
-		margin: 0 0.1em;
-		font: 0.8em;
+		min-height: 5em;
 	}
 	.contact {
 		width: 60%;
@@ -288,47 +239,59 @@ input[type=submit] {
 	main {
 		padding: .5em;
 		width: 85%;
-		margin: auto;
-		font-size: 12px;
 	}
+	button {
+		display:inline-block;
+	}
+	header {
+		padding: 0.5em;
+	}
+	.dropbtn {
+	    background-color: darkblue;
+	    color: white;
+	    padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
+	.dropbtn:hover, .dropbtn:focus {
+	    background-color: rgb(255, 255, 200);
+	    color:black;
+	}
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	}
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+	.dropdown-content a:hover {
+		background-color: rgb(255, 255, 200);
+	    color:black;
+	}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user
+	clicks on the dropdown button) */
+	.show {display:block;}
 }
 
-@media only screen and (min-width: 460px) and (max-width: 500px) {
-	.all-services {
-		background-color: blue;
-	}
-	section section{
-		padding: 0.2em;
-		width: 100%;
-		float: none;
-		border: 1px black solid;
-		min-height: 05em;
-	}
-	nav a {
-		font: 0.6em;
-	}
-	.contact {
-		width: 80%;
-	}
-	main {
-		padding: .5em;
-		width: 90%;
-		margin: auto;
-		font-size: 12px;
-	}
-}
 
-@media only screen and (min-width: 200px) and (max-width: 459px) {
-	.all-services {
-		background-color: blue;
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+	section section {
+		padding: 1em;
 	}
-	section section{
-		padding: 0.2em;
-		width: 100%;
-		float: none;
-		border: 1px black solid;
-		min-height: 05em;
-	}
+
 	nav a {
 		font: 0.6em;
 	}
@@ -344,7 +307,7 @@ input[type=submit] {
 	main {
 		padding: .5em;
 		width: 95%;
-		margin: auto;
-		font-size: 12px;
 	}
+
+
 }
