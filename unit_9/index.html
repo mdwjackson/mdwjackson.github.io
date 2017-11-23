@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matt's Digital Marketing Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+	<meta name="viewport" content="width=device-width, initialscale=1">
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+<script>function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</head>
+<body>
+	
+	<header>
+	<div>
+		<h1>Matt's Digital Marketing Website</h1>
+		<p>Digital Marketing Done Right!</p>
+	</div>
+		<nav class="clearfix">
+			<button onclick="myFunction()" class="dropbtn">Menu</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="index.html#about">About Me</a>
+			<a href="index.html#digiservices">Services</a>
+			<a href="index.html#outsource">Agency Outsourcing</a>
+			<a class="contact-link" href="index.html#contact-bar">Contact Your Pro</a>
+		</nav>
+	</header>
+	<div class="banner clearfix">
+	<h1>Treating Small Businesses the same as Fortune 500's.</h1>
+	</div>
+
+<!-- Resize images and get proper images from istock etc. -->
+	<main class="clearfix">
+		<section>
+			<h2 id="about">About Me</h2>
+			<p>A Sydney based digital marketing professional. Expertise steeped in Paid Google (AdWords), Social Media Marketing, Display Advertising and more. My passion is to develop partnerships with my clients that generate them more leads, more sales and a higher return from their advertising budget.</p>
+			<p class="hide-s">I recognise that most of my clients are business owners, and every dollar spent is another dollar not spent on other business needs. Each dollar in needs to equate to more than a dollar return.</p>
+			<p class="hide-s">I have succeeded in helping business with advertising budgets ranging from $200/month in excess of $200k/month and can assist in industries such as:</p>
+			<ul class="hide-s">
+				<li>Finance &amp; Insurance</li>
+				<li>Plumbers</li>
+				<li>Electricians</li>
+				<li>Physiotherapist</li>
+				<li>Dentists</li>
+				<li>Automotive (Sales &amp; Services)</li>
+				<li>Telecommunications</li>
+				<li>Architects</li>
+				<li>Travel &amp; Tourism</li>
+				<li>Registered Charities (Google Grants)</li>
+			</ul>
+		</section>
+		<section class="all-services clearfix">
+			<h2 id="digiservices">Digital Marketing Services</h2>
+			<section class="services">
+				<img class="ads-logo" src="images/icons/icons8-google-web-search.png" alt="google adwords" title="google logo">
+				<h3 class="clearfix">Google AdWords</h3>
+				<p>Get your business in front of people when they are looking. Only pay for clicks for people who are looking for your business. Service includes audit, new account builds, maintenance and training (optional extra).</p>
+			</section>
+			<section>
+				<img class="ads-logo" src="images/icons/icons8-footer.png" alt="google banner ads" title="google banner ads logo">
+				<h3 class="clearfix">Display Advertising</h3>
+				<p>Expand your companies reach to capture new audiences. Banners ads are a low cost way to expand your businesses reach across new audiences. Dynamic Retargeting can be developed in conjunction with a graphics designer.</p>
+			</section>
+			<section>
+				<img class="ads-logo" src="images/icons/icons8-linkedin.png" alt="linkedin ads" title="linkedin logo">
+				<h3 id="linkedin-logo" class="clearfix">LinkedIn Ads</h3>
+				<p>Only service specific B2B sectors? Only want to target Human Resource professionals? Reach professionals who fit your target audience. Service includes strategy &amp; implementation of hyper-targeted campaigns.</p>
+			</section>
+			<section>
+				<img class="ads-logo" src="images/icons/icons8-facebook.png" alt="facebook ads" title="facebook logo">
+				<h3 class="clearfix">Facebook Ads</h3>
+				<p>Talk to your customers when they are most receptive. Facebook ads are some of the most cost efficient and highly interactive. Service includes strategy and implementation. Ability to work and recommend graphic designer.</p>
+			</section>
+			<section>
+				<img class="ads-logo" src="images/icons/icons8-email-document.png" alt="gmail ads" title="gmail logo">
+				<h3 class="clearfix">Gmail Email Ads</h3>
+				<p>Contextualise a personal email to thousands of potential leads. Expand your reach with Gmail ads. Strategy and implementation. Able to work with graphic designer.</p>
+			</section>
+			<section id="outsource">
+				<img class="ads-logo" src="images/icons/icons8-online-support.png" alt="agency support" title="agency support logo">
+				<h3 class="clearfix">Paid Search Agency Support</h3>
+				<p>Remote, short term Paid Search/SEM/AdWords support. Campaign builds, account optimisations, ad creation &amp; more.</p>
+			</section>
+		</section>		
+	</main>
+		<aside class="clearfix" id="contact-bar">
+			<h2>Contact Matt</h2>
+			<form action="#" class="contact">
+				<label for="name">Your Name</label>
+				<input type="text" id="name" name="name" placeholder="Your Name...">
+				<label for="email">Your Email</label>
+				<input type="text" id="email" placeholder="Your Email...">
+				<label for="subject">How can I help?</label>
+				<textarea id="subject" name="subject" placeholder="What can I help you with?"></textarea>
+				<input type="submit" name="submit" value="Submit To Your Pro" >
+			</form>
+		</aside>
+	<footer>
+		<div class="footer-column" id="column-1">
+		<a href="#">Privacy Policy</a><br>
+		<a href="#">Terms &amp; Conditions</a><br>
+		</div>
+		<div class="footer-column" id="column-3">
+		<a href="#about">About Matt</a><br>
+		<a href="index.html#contact-bar">Contact Matt</a><br>
+		</div>
+		<p class="footer-colum" id="column-2">Made with &hearts; by Matt as part of a 10 week HTML &amp; CSS Web Design course from <a href="https://generalassemb.ly/education/learn-html-css-web-design-online" target="_blank">General Assemb.ly</a>. Feedback is more than welcome, submitted by emailing the team at <a href="mailto:theteam@yourdigitalmarketing.pro">theteam@yourdigitalmarketing.pro</a></p>
+	</footer>
+</body>
+</html>
