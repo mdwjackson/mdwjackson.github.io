@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Matt's Digital Marketing Website</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
 	<meta name="viewport" content="width=device-width, initialscale=1">
-	/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-<script>function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+	/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+	<script>function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+	</script>
 </head>
 <body>
-	
 	<header>
 	<div>
 		<h1>Matt's Digital Marketing Website</h1>
@@ -37,16 +35,16 @@ window.onclick = function(event) {
 		<nav class="clearfix">
 			<button onclick="myFunction()" class="dropbtn">Menu</button>
 			<div id="myDropdown" class="dropdown-content">
-			<a href="index.html#about">About Me</a>
-			<a href="index.html#digiservices">Services</a>
-			<a href="index.html#outsource">Agency Outsourcing</a>
-			<a class="contact-link" href="index.html#contact-bar">Contact Your Pro</a>
+				<a href="index.html#about">About Me</a>
+				<a href="index.html#digiservices">Services</a>
+				<a href="index.html#outsource">Agency Outsourcing</a>
+				<a class="contact-link" href="index.html#contact-bar">Contact Your Pro</a>
+			</div>
 		</nav>
 	</header>
 	<div class="banner clearfix">
 	<h1>Treating Small Businesses the same as Fortune 500's.</h1>
 	</div>
-
 <!-- Resize images and get proper images from istock etc. -->
 	<main class="clearfix">
 		<section>
