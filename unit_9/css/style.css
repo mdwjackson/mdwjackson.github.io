@@ -243,12 +243,15 @@ input[type=submit]:hover {
 	}
 }
 
-@media only screen and (max-width: 827px) {
+@media only screen and (max-width: 837px) {
 	section section{
 		padding: 1em;
 		width: 100%;
 		float: none;
 		min-height: 5em;
+	}
+	.banner {
+		height: 60vh;	
 	}
 	.contact {
 		width: 60%;
@@ -320,6 +323,19 @@ input[type=submit]:hover {
 		padding: 1em;
 	}
 
+	.banner {
+		background-image: URL("../images/break-2297835_640.jpg");
+		height: 41.5vh;	
+	}
+	.banner h1 {
+		text-align: left;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		margin: 2.5em 0.5em;
+		padding:0.25em; 
+		max-width: 15em;
+		background-color: white;
+	}
 	nav a {
 		font: 0.6em;
 	}
