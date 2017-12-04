@@ -15,6 +15,8 @@ h2 {font-size: 1.35em; padding:0.5em 0;}
 h3 {font-size: 1.25em; color: #c7ad6d; margin: 1.5em 0 0em 0;}
 p {font-family: Roboto, garamond, serif; padding: 0.25em 0;}
 a {color: #263238;}
+label {font-family: Roboto, garamond, serif;}
+li {font-family: Roboto, garamond, serif;}
 
 header {
 	text-transform: uppercase;
@@ -49,13 +51,13 @@ nav a {
 	font-size: 1.7em;
 }
 
+nav a:hover, nav a:focus {
+		background-color: #c7ad6d;
+	}
+
 a:visited {
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
-}
-
-a:hover, a:focus {
-	background-color: #c7ad6d;
 }
 
 a:active { 
@@ -177,11 +179,11 @@ input, textarea {
 	display: block;
 	background-color: rgba(199, 173, 109,0.2);
 	font-size: 1.1em;
-	padding: 0.5em;
+	padding: 1em;
 }
 
 input[type=submit] {
-	padding: 0.2em;
+	padding: 1em;
 	background-color: #c7ad6d;
 	color: #263238;
 	width: 100%;
@@ -204,9 +206,6 @@ input[type=submit]:hover {
 .contact-link:hover {
 	background-color: #c7ad6d;
 	color: #263238;
-	padding: 1em;
-	border-right: 0.1em solid #000000; 
-	border-left: 0.1em solid #000000;
 }
 
 #column-1 {
@@ -288,14 +287,13 @@ input[type=submit]:hover {
 	}
 	.dropdown-content {
 	    display: none;
-	    /*position: absolute;*/
+	    position: absolute;
 	    background-color: #f9f9f9;
-	    min-width: 20em;
+	    min-width: 25em;
 	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	    z-index: 1;
-	    position: relative;
 		top: 100%;
-		right: 0;
+		right: 0.5em;
 	}
 	.dropdown-content a {
 	    color: black;
@@ -314,6 +312,9 @@ input[type=submit]:hover {
 
 	header {
 		padding: 1.2em;
+	}
+	a:hover, a:focus {
+		background-color: #c7ad6d;
 	}
 }
 
