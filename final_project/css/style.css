@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+* {margin: 0; padding:0; box-sizing: border-box;}
+
+body{
+	color: #141823;
+	margin: 0em;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+h1, h2, h3 {font-family: Open Sans, helvetica bold, sans-serif;}
+h1 {font-size: 1.5em;}
+h2 {font-size: 1.35em; padding:2em 0; text-align: center;}
+h3 {font-size: 1.25em; color: #c7ad6d; margin: 1.5em 0 0em 0;}
+p {font-family: Roboto, garamond, serif; padding: 0.25em 0;}
+a {color: #263238;}
+label {font-family: Roboto, garamond, serif; text-align: center;}
+li {font-family: Roboto, garamond, serif;}
+
+header {
+	text-transform: uppercase;
+	padding: 0.2em;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	margin: auto;
+/*	border: 1px black solid;*/
+}
+
+header section {
+	color: red;
+/*	margin: auto;*/
+	background-color: white;
+	width: 75%;
+	margin: auto;
+}
+
+header div{
+	font-size: 0.5em;
+	float: left;
+}
+
+nav {
+	float: right;
+	display: block;
+	padding: 1em 0.5em;
+	position: relative;
+	top: 100%;
+	right: 0;
+}
+
+nav a {
+	margin: .25em 1.1em 0.25em 1.1em;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	text-decoration: none;
+	padding: 0.5em 0;
+	font-size: 1.7em;
+}
+
+nav a:hover, nav a:focus {
+		background-color: #c7ad6d;
+	}
+
+nav a:visited {
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+nav a:active { 
+	background-color: rgba(10,10,255,0.2);
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+footer a {
+	color:white;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+
+footer a:hover, footer a:focus {
+	background-color: #c7ad6d;
+	text-decoration: none;
+}
+
+footer a:visited {
+	color:white;
+	text-decoration: none;
+}
+
+footer a:active { 
+	color: #141823; 
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+main {
+	padding: 1.5em;
+	width: 70em;
+	margin: auto;
+	background-color: white;
+}
+
+.about-me p {
+	max-width: 60%;
+	margin: auto;
+	padding: 1em 0;
+}
+
+ul {
+	list-style-type: none;
+	margin:0em;
+	padding: 0.5em;
+	width: auto;
+}
+
+section section{
+	padding: 1em;
+	width: 50%;
+	float: left;
+	border: 1px black solid;
+	min-height: 16em;
+	max-width: 800px;
+}
+
+aside {
+	padding: 0 4em 1em 4em;
+	width: 80%;
+	display: block;
+	margin: auto;
+	background-color: white;
+}
+
+aside h2 {
+	text-align: center;
+}
+
+footer {
+	color: white; 
+	clear: both;
+	padding: 20px;
+	display: block;
+	position: bottom;
+	bottom: 0;
+	background-image: URL("../images/marble-2389904_1280.jpg");
+	width: 100%;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	font-size: 0;
+	display: block;
+	content: " ";
+	height: 0;
+	clear: both;
+}
+
+button {display:none;}
+
+.list1 {
+	float: left;
+}
+
+.list2 {
+	float: left;
+}
+
+.banner {
+	background-image: URL("../images/marble-2389904_1280.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40vh;
+	margin: 3em 0 0 0;
+	padding: 2em 2em;
+}
+
+.banner h1 {
+	text-align: left;
+	color: white;
+	font-size: 2em;
+	text-transform: uppercase;
+	margin: 2em 1em;
+	max-width: 15em;
+}
+
+#subject {
+	height: 10em;
+}
+
+.ads-logo{
+	margin: 1em 0 1em 0;
+	width: auto;
+	height: auto;
+	float:left;
+	display: inline-block;
+}
+
+.contact {
+	width: 50%;
+	margin: auto;
+}
+
+form > * {
+	display: block;
+	border: none;
+	margin: 0.5em 0;
+}
+
+input, textarea {
+	width: 100%;
+	display: block;
+	background-color: rgba(199, 173, 109,0.2);
+	font-size: 1.2em;
+	padding: 1em;
+	text-align: center;
+}
+
+input[type=submit] {
+	padding: 1em;
+	background-color: #c7ad6d;
+	color: #263238;
+	width: 100%;
+	border: 1px solid #263238;
+}
+
+input[type=submit]:hover {
+	background-color: #263238 ;
+	color: #c7ad6d;
+	border: 1px solid #c7ad6d;
+}
+
+.contact-link {
+	background-color: #263238;
+	color: #c7ad6d;
+	padding: 1.1em;
+	font-weight: bold;
+}
+
+.contact-link:hover {
+	background-color: #c7ad6d;
+	color: #263238;
+}
+
+#column-1 {
+	float: left;
+	padding-right: 2em;
+}
+
+#column-2 {
+	display: block;
+	content: " ";
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+#column-3 {
+	float: right;
+	padding-left: 2em;
+}
+
+.about-me {
+	text-align: center;
+}
+
+@media only screen (min-width: 1280px) {
+	section section{
+		min-height: 20em;
+	}
+	body {
+		font-size: 20px;
+	}
+	.banner h1 {
+		margin-left: 4em;
+	}
+
+}
+
+@media only screen and (max-width: 1065px) {
+	section section{
+		min-height: 17em;
+	}
+	nav a {
+		margin: 0 .5em;
+		font: 0.8em;
+	}
+	.contact {
+		width: 40%;
+	}
+	main {
+		width: 80%;
+	}
+}
+
+
+@media only screen and (max-width: 815px) {
+	section section{
+		padding: 1em;
+		width: 100%;
+		float: none;
+		min-height: 5em;
+	}
+	.banner {
+		height: 50vh;	
+	}
+	.banner h1{
+		margin: 1.5em 0.75em;
+	}
+	.contact {
+		width: 60%;
+	}
+	main {
+		padding: .5em;
+		width: 85%;
+	}
+	button {
+		display:inline-block;
+	}
+	header {
+		padding: 0.1em;
+	}
+	.dropbtn {
+	    background-color: #c7ad6d;
+	    color: #263238;
+	    padding: 0.25em;
+	    font-size: 1.5em;
+	    border: 1px solid black;
+	    cursor: pointer;
+	}
+	.dropbtn:hover, .dropbtn:focus {
+	    background-color: #263238;
+	    color: #c7ad6d;
+	}
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	}
+	.contact-link {
+		color: #263238;
+		background-color: #c7ad6d;
+	}
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 25em;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+		top: 100%;
+		right: 0.5em;
+	}
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+	.dropdown-content a:hover {
+		background-color: rgb(255, 255, 200);
+	    color:black;
+	}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user
+	clicks on the dropdown button) */
+	.show {display:block;}
+
+	a:hover, a:focus {
+		background-color: #c7ad6d;
+	}
+
+	header img {
+		padding: 1em;
+	}
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+	section section {
+		padding: 1em;
+	}
+	.banner h1 {
+		text-align: left;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		margin: 3em 0.5em;
+		padding:0.25em; 
+		max-width: 15em;
+	}
+	nav a {
+		font: 0.6em;
+	}
+	.contact {
+		width: 100%;
+	}
+	footer p{
+		font-size: 0.6em;
+	}
+	.hide-s {
+		display: none;
+	}
+	main {
+		padding: .5em;
+		width: 95%;
+	}
+	header {
+	padding: 1.6em;
+	}
+}

@@ -6,29 +6,38 @@ body{
 	color: #141823;
 	margin: 0em;
 	font-size: 16px;
-	line-height: 1.25;
+	line-height: 1.3;
 }
 
 h1, h2, h3 {font-family: Open Sans, helvetica bold, sans-serif;}
 h1 {font-size: 1.5em;}
-h2 {font-size: 1.35em; padding:0.5em 0;}
+h2 {font-size: 1.35em; padding:2em 0; text-align: center;}
 h3 {font-size: 1.25em; color: #c7ad6d; margin: 1.5em 0 0em 0;}
 p {font-family: Roboto, garamond, serif; padding: 0.25em 0;}
 a {color: #263238;}
-label {font-family: Roboto, garamond, serif;}
+label {font-family: Roboto, garamond, serif; text-align: center;}
 li {font-family: Roboto, garamond, serif;}
 
 header {
 	text-transform: uppercase;
-	padding: 2em;
+	padding: 0.2em;
 	background-color: white;
 	width: 100%;
 	position: fixed;
 	top: 0px;
-	border: 1px black solid;
+	margin: auto;
+/*	border: 1px black solid;*/
 }
 
-header div {
+header section {
+	color: red;
+/*	margin: auto;*/
+	background-color: white;
+	width: 75%;
+	margin: auto;
+}
+
+header div{
 	font-size: 0.5em;
 	float: left;
 }
@@ -36,14 +45,14 @@ header div {
 nav {
 	float: right;
 	display: block;
-	padding: 0 0.5em;
+	padding: 1em 0.5em;
 	position: relative;
 	top: 100%;
 	right: 0;
 }
 
 nav a {
-	margin: .025em 1.1em 0.25em 1.1em;
+	margin: .25em 1.1em 0.25em 1.1em;
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
 	text-decoration: none;
@@ -55,15 +64,36 @@ nav a:hover, nav a:focus {
 		background-color: #c7ad6d;
 	}
 
-a:visited {
+nav a:visited {
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
 }
 
-a:active { 
+nav a:active { 
 	background-color: rgba(10,10,255,0.2);
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
+}
+
+footer a {
+	color:white;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+
+footer a:hover, footer a:focus {
+	background-color: #c7ad6d;
+	text-decoration: none;
+}
+
+footer a:visited {
+	color:white;
+	text-decoration: none;
+}
+
+footer a:active { 
+	color: #141823; 
+	text-decoration: none;
 }
 
 img{
@@ -74,12 +104,16 @@ img{
 
 main {
 	padding: 1.5em;
-	width: 80%;
+	width: 70em;
 	margin: auto;
 	background-color: white;
 }
 
-main p {max-width: 35em;}
+.about-me p {
+	max-width: 60%;
+	margin: auto;
+	padding: 1em 0;
+}
 
 ul {
 	list-style-type: none;
@@ -93,7 +127,8 @@ section section{
 	width: 50%;
 	float: left;
 	border: 1px black solid;
-	min-height: 14em;
+	min-height: 16em;
+	max-width: 800px;
 }
 
 aside {
@@ -104,14 +139,18 @@ aside {
 	background-color: white;
 }
 
+aside h2 {
+	text-align: center;
+}
+
 footer {
+	color: white; 
 	clear: both;
-	border: 1px black solid;
 	padding: 20px;
 	display: block;
 	position: bottom;
 	bottom: 0;
-	background-color: rgba(10,10,255,0.05);
+	background-image: URL("../images/marble-2389904_1280.jpg");
 	width: 100%;
 }
 
@@ -135,20 +174,20 @@ button {display:none;}
 }
 
 .banner {
-	background-image: URL("../images/working-guy.jpg");
+	background-image: URL("../images/marble-2389904_1280.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 85vh;
+	height: 40vh;
 	margin: 3em 0 0 0;
 	padding: 2em 2em;
 }
 
 .banner h1 {
 	text-align: left;
-	color: #c7ad6d;
+	color: white;
 	font-size: 2em;
 	text-transform: uppercase;
-	margin: 3em 0;
+	margin: 2em 1em;
 	max-width: 15em;
 }
 
@@ -165,7 +204,8 @@ button {display:none;}
 }
 
 .contact {
-	width: 30%;
+	width: 50%;
+	margin: auto;
 }
 
 form > * {
@@ -178,8 +218,9 @@ input, textarea {
 	width: 100%;
 	display: block;
 	background-color: rgba(199, 173, 109,0.2);
-	font-size: 1.1em;
+	font-size: 1.2em;
 	padding: 1em;
+	text-align: center;
 }
 
 input[type=submit] {
@@ -226,9 +267,26 @@ input[type=submit]:hover {
 	padding-left: 2em;
 }
 
+.about-me {
+	text-align: center;
+}
+
+@media only screen (min-width: 1280px) {
+	section section{
+		min-height: 20em;
+	}
+	body {
+		font-size: 20px;
+	}
+	.banner h1 {
+		margin-left: 4em;
+	}
+
+}
+
 @media only screen and (max-width: 1065px) {
 	section section{
-		min-height: 16.5em;
+		min-height: 17em;
 	}
 	nav a {
 		margin: 0 .5em;
@@ -242,7 +300,8 @@ input[type=submit]:hover {
 	}
 }
 
-@media only screen and (max-width: 837px) {
+
+@media only screen and (max-width: 815px) {
 	section section{
 		padding: 1em;
 		width: 100%;
@@ -250,7 +309,10 @@ input[type=submit]:hover {
 		min-height: 5em;
 	}
 	.banner {
-		height: 60vh;	
+		height: 50vh;	
+	}
+	.banner h1{
+		margin: 1.5em 0.75em;
 	}
 	.contact {
 		width: 60%;
@@ -263,13 +325,13 @@ input[type=submit]:hover {
 		display:inline-block;
 	}
 	header {
-		padding: 0.5em;
+		padding: 0.1em;
 	}
 	.dropbtn {
 	    background-color: #c7ad6d;
 	    color: #263238;
-	    padding: 16px;
-	    font-size: 16px;
+	    padding: 0.25em;
+	    font-size: 1.5em;
 	    border: 1px solid black;
 	    cursor: pointer;
 	}
@@ -310,11 +372,12 @@ input[type=submit]:hover {
 	clicks on the dropdown button) */
 	.show {display:block;}
 
-	header {
-		padding: 1.2em;
-	}
 	a:hover, a:focus {
 		background-color: #c7ad6d;
+	}
+
+	header img {
+		padding: 1em;
 	}
 }
 
@@ -323,19 +386,13 @@ input[type=submit]:hover {
 	section section {
 		padding: 1em;
 	}
-
-	.banner {
-		background-image: URL("../images/break-2297835_640.jpg");
-		height: 41.5vh;	
-	}
 	.banner h1 {
 		text-align: left;
-		font-size: 1.2em;
+		font-size: 1.5em;
 		text-transform: uppercase;
-		margin: 2.5em 0.5em;
+		margin: 3em 0.5em;
 		padding:0.25em; 
 		max-width: 15em;
-		background-color: white;
 	}
 	nav a {
 		font: 0.6em;
